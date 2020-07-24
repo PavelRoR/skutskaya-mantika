@@ -73,19 +73,19 @@
 		line-height: 1.1
 	.last-text
 		font-size: 22px
-@media screen and (max-width 767px)
-	.header-logo
-		float: none
-		display block
-		margin 0 auto 5px
-	.contacts
-		float: none
-		text-align center
-		line-height: 1
-	.contact
-		display inline-block
-		line-height: 1
-		text-align center
+// @media screen and (max-width 767px)
+// 	.header-logo
+// 		float: none
+// 		display block
+// 		margin 0 auto 5px
+// 	.contacts
+// 		float: none
+// 		text-align center
+// 		line-height: 1
+// 	.contact
+// 		display inline-block
+// 		line-height: 1
+// 		text-align center
 @media screen and (max-width 560px)
 	header
 		margin-bottom: 30px
@@ -93,9 +93,12 @@
 	.header-logo
 		width 70px
 		margin-bottom: 0
+	.contacts
+		line-height: 1
 	.contact
 		font-size: 12px
-		margin-top: 5px
+		// margin-top: 5px
+		line-height: 1
 		a
 			font-size: 12px
 	.main-title
@@ -137,6 +140,18 @@
 @media screen and (max-width 385px)
 	header
 		margin-bottom: 10px
+	.header-logo
+		float: none
+		display block
+		margin 0 auto 5px
+	.contacts
+		float: none
+		text-align center
+	.contact
+		text-align center
+		display inline-block
+		&-tel
+			margin 0 10px 0 0
 	.main-title
 		font-size: 26px
 	.main-subtitle

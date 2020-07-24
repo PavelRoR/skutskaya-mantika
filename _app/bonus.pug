@@ -1,0 +1,23 @@
+-var path = '../';
+-var head_title = 'Бонус';
+-var head_description = 'от Анны Скуцуой';
+-var styles = '../css/bonus.min.css';
+-var fav_ico = '../favicon.ico'
+-var fav_png = '../favicon.png'
+-var footer_title = true
+	
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_scripts
+	body
+		include pug/scripts/body_top_scripts
+		section#main
+			.container
+				include pug/base/header
+				h1.main-title=head_title
+				p.main-text=head_description
+				a.button.button-thanks(href='https://drive.google.com/file/d/1VWc9gMwNtiDE2b4DyYqzrFjJZULaZlSe/view?usp=sharing' target="_blank") Скачать
+		include pug/base/footer
+		include pug/scripts/body_bottom_scripts
